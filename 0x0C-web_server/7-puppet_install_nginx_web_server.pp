@@ -23,7 +23,7 @@ exec { 'create-directory':
 # ensure index file exists
 file { '/var/www/html/index.html':
   ensure  => file,
-  content => 'Holberton School',        # index file
+  content => 'Hello World!',        # index file
   require => Exec['create-directory'],  # require directory for storage
 }
 
